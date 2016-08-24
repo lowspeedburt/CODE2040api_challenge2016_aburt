@@ -26,5 +26,5 @@ dataToPost = {
     'needle': foundNeedle
 }
 # API Challenge Validation and response.
-step3Validate = requests.post('http://challenge.code2040.org/api/haystack/validate', data=dataToPost)
+step3Validate = requests.post('http://challenge.code2040.org/api/haystack/validate', json=dataToPost)
 print(step3Validate.text)
