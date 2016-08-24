@@ -17,5 +17,5 @@ step2dataToPost = {
     'token': myToken
 }
 # Sends API POST request for challenge validation and displays text response
-step2Validate = requests.post('http://challenge.code2040.org/api/reverse/validate', data=step2dataToPost)
+step2Validate = requests.post('http://challenge.code2040.org/api/reverse/validate', json=step2dataToPost)
 print(step2Validate.text)
