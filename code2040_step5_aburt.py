@@ -32,7 +32,7 @@ finalDateObject = dateStampObject + timedelta(seconds=interval)
 
 # Converts final date object to a string
 finalDateString = finalDateObject.strftime('%Y-%m-%dT%XZ')
-print(type(finalDateString)) # teste that conversion was done correctly
+print(type(finalDateString)) # test that conversion was done correctly
 
 # Dictionary to POST
 dataToPost = {
