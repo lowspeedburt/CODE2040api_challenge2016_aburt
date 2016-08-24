@@ -30,7 +30,7 @@ print(dateStampObject)
 # Adds given interval to datestamp object
 finalDateObject = dateStampObject + timedelta(seconds=interval)
 
-# Converts final date object to a string
+# Converts Final Date object to a String
 finalDateString = finalDateObject.strftime('%Y-%m-%dT%XZ')
 print(type(finalDateString)) # test that conversion was done correctly
 
