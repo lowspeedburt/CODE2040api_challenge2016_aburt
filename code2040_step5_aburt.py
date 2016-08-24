@@ -23,7 +23,7 @@ print(interval)
 print(datestamp)
 print()
 
-# converts datestamp string to datetime object and diplays object
+# Converts datestamp string to datetime object and diplays object
 dateStampObject = datetime.strptime(datestamp, '%Y-%m-%dT%XZ')
 print(dateStampObject)
 
