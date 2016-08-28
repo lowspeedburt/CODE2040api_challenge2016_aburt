@@ -9,7 +9,7 @@ myToken = '3624f3214a21f60da7488a0716e6eee3'
 step3 = requests.post('http://challenge.code2040.org/api/haystack', data={'token': myToken})
 print(step3.text)
 
-# # Converts POST Request to JSON.
+# Converts POST Request to JSON.
 step3jsonResponse = json.loads(step3.text)
 
 # Isolation of target String from API dictionary.
