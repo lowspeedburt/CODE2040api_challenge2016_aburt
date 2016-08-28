@@ -3,10 +3,10 @@ import requests
 import json
 
 # CODE2040 API Token.
-myToken = '3624f3214a21f60da7488a0716e6eee3'
+myAPIToken = '3624f3214a21f60da7488a0716e6eee3'
 
 # POST Request for challenge dictionary and Response.
-step3 = requests.post('http://challenge.code2040.org/api/haystack', data={'token': myToken})
+step3 = requests.post('http://challenge.code2040.org/api/haystack', data={'token': myAPIToken})
 print(step3.text)
 
 # Converts POST Request to JSON.
@@ -22,7 +22,7 @@ print(foundNeedle)
 
 # Dictionary to POST for Validation.
 dataToPost = {
-    'token': myToken,
+    'token': myAPIToken,
     'needle': foundNeedle
 }
 # API Challenge Validation and Response.
