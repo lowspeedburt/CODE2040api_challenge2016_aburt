@@ -5,8 +5,14 @@ import json
 # CODE2040 API Token.
 myAPIToken = '3624f3214a21f60da7488a0716e6eee3'
 
+# CODE2040 Step 3 Challenge URL.
+codeChallengeUrl = 'http://challenge.code2040.org/api/haystack'
+
+# Validation URL for Step 3 challenge.
+codeValidationUrl = 'http://challenge.code2040.org/api/haystack/validate'
+
 # POST Request for challenge dictionary and Response.
-step3 = requests.post('http://challenge.code2040.org/api/haystack', data={'token': myAPIToken})
+step3 = requests.post(codeChallengeUrl, data={'token': myAPIToken})
 print(step3.text)
 
 # Converts POST Request to JSON.
@@ -26,5 +32,5 @@ dataToPost = {
     'needle': foundNeedle
 }
 # API Challenge Validation and Response.
-step3Validate = requests.post('http://challenge.code2040.org/api/haystack/validate', json=dataToPost)
+step3Validate = requests.post(codeValidationUrl, json=dataToPost)
 print(step3Validate.text)
